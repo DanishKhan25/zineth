@@ -11,7 +11,7 @@ const TextImageComponent = () => {
       justify="center"
       padding="1rem"
       width="95%"
-      height="100%"
+      height="90vh"
       margin="0 auto"
     >
       <Flex
