@@ -1,7 +1,3 @@
-import bitcoinLogo from "@/app/assets/bitcoinLogo.png";
-import cardLogo from "@/app/assets/cardlogo.png";
-import image1 from "@/app/assets/image-2.png";
-import usdtLogo from "@/app/assets/usdtLogo.png";
 import Header from "@/components/Header";
 import {
   Box,
@@ -16,6 +12,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import bitcoinLogo from "../assets/bitcoinLogo.png";
+import cardLogo from "../assets/cardlogo.png";
+import image1 from "../assets/image-2.png";
+import usdtLogo from "../assets/usdtLogo.png";
 import classes from "../page.module.css";
 const page = () => {
   return (
