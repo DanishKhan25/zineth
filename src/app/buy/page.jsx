@@ -13,8 +13,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import bitcoinLogo from "../assets/bitcoinLogo.png";
-import cardLogo from "../assets/cardlogo.png";
+import bitcoinLogo from "../assets/Bitcoinlogo.png";
+import cardLogo from "../assets/cardLogo.png";
 import image1 from "../assets/image-2.png";
 import usdtLogo from "../assets/usdtLogo.png";
 import classes from "../page.module.css";
