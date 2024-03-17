@@ -11,7 +11,7 @@ const TextImageComponent = () => {
       justify="center"
       padding="1rem"
       width="95%"
-      height="70vh"
+      height="100%"
       margin="0 auto"
     >
       <Flex
@@ -41,7 +41,7 @@ const TextImageComponent = () => {
       </Flex>
 
       <Flex align="center" justify="center" flex="1" height="100%">
-        <Image src={image1} alt="image" style={{ borderRadius: "10px" }} />
+        <Image src={image1} alt="image" style={{ borderRadius: "20px" }} />
       </Flex>
     </Flex>
   );
