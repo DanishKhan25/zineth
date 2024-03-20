@@ -27,6 +27,7 @@ const page = () => {
         justify="center"
         padding="1rem"
         width="95%"
+        height="95vh"
         margin="0 auto"
       >
         <Flex

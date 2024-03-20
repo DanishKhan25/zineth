@@ -1,9 +1,11 @@
 import Arrow from "@/app/assets/svg/Arrow";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Tooltip } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../app/assets/logosm.png";
+import AboutUs from "./AboutUs";
 import CustomBtn from "./CustomBtn";
+import RoadMap from "./RoadMap";
 const Header = () => {
   return (
     <Flex align="center" justify="space-between" padding="1rem">
@@ -18,8 +20,9 @@ const Header = () => {
           </Flex>
         </Link>
       </Box>
-      <Flex flex="1" justify="flex-end" align="center" gap="10px">
+      <Flex flex="1" justify="flex-end" align="center" gap="20px">
         {/* Right side items */}
+
         <Box
           flex="0 0 25%"
           fontSize="24px"
@@ -28,27 +31,20 @@ const Header = () => {
           display="flex"
           alignItems="center"
           gap="5px"
+          cursor="pointer"
+          _hover={{ color: "orange" }}
         >
-          Road Map
+          <Tooltip
+            label={<RoadMap />}
+            aria-label="A tooltip"
+            rounded="md"
+            width="250px"
+          >
+            Road Map
+          </Tooltip>
           <Arrow width="20px" height="20px" />
         </Box>
 
-        <Link
-          href="https://docs.google.com/document/d/1XLClsNYWHr52s-tkFIKg4svRupTjyY-w7YBfKxhSkTY/edit?usp=sharing"
-          target="_blank"
-        >
-          <Box
-            flex="0 0 25%"
-            fontSize="24px"
-            fontWeight="bold"
-            color="#fff"
-            display="flex"
-            alignItems="center"
-            gap="5px"
-          >
-            Whitepaper <Arrow width="20px" height="20px" />
-          </Box>
-        </Link>
         <Box
           flex="0 0 25%"
           fontSize="24px"
@@ -57,8 +53,38 @@ const Header = () => {
           display="flex"
           alignItems="center"
           gap="5px"
+          _hover={{ color: "orange" }}
+          cursor="pointer"
         >
-          About <Arrow width="20px" height="20px" />
+          <Link
+            href="https://docs.google.com/document/d/1XLClsNYWHr52s-tkFIKg4svRupTjyY-w7YBfKxhSkTY/edit?usp=sharing"
+            target="_blank"
+          >
+            Whitepaper
+          </Link>
+          <Arrow width="20px" height="20px" />
+        </Box>
+
+        <Box
+          flex="0 0 25%"
+          fontSize="24px"
+          fontWeight="bold"
+          color="#fff"
+          display="flex"
+          alignItems="center"
+          gap="5px"
+          cursor="pointer"
+          _hover={{ color: "orange" }}
+        >
+          <Tooltip
+            label={<AboutUs />}
+            aria-label="A tooltip"
+            rounded="md"
+            minW="500px"
+          >
+            About
+          </Tooltip>
+          <Arrow width="20px" height="20px" />
         </Box>
         <Box flex="0 0 25%">
           <Link href="/buy">
